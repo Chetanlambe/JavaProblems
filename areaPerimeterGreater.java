@@ -9,12 +9,13 @@ public class areaPerimeterGreater {
         System.out.println("Enter the breadth");
         int breadth = sc.nextInt();
         int area = length * breadth;
-        int perimeter = 2 * (length * breadth);
-        if(area>perimeter){
+        int perimeter = 2 * (length + breadth);
+        if(area > perimeter){
             System.out.println("Area is greater than the perimeter");
-        }else{
+        }else if(perimeter > area){
             System.out.println("Perimeter is greater than the area");
+        }else{
+         System.out.println("area and perimeter are equal");
         }
-
     }
 }
